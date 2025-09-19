@@ -5,4 +5,4 @@ plugins:
 layout: page
 title: CatNur's homepage
 description: Hello World
-permalink: https://catsnut.github.io/about/contact
+#permalink: https://catsnut.github.io/about/contact
