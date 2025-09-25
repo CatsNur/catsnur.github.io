@@ -1,0 +1,129 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/cv/TimeLine.astro";
+---
+
+<BaseLayout title="Castner Resume" sideBarActiveItemID="cv">
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Profile</div>
+  </div>
+
+  <div class="mb-10 text-justify">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Education</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+      title="Ph.D. in Computer Science"
+      subtitle="June 2017 to Oct 2020 at University of Tübingen, Tübingen, Germany"
+    />
+    <TimeLineElement
+      title="M.Sc. in Cognitive Science"
+      subtitle="Oct 2014 to May 2017 at University of Tübingen, Tübingen, Germany"
+    />
+    <TimeLineElement
+      title="B.Sc. in Psychology and B.A. in German"
+      subtitle="Aug 2009 to May 2013 at Lycoming College, Williamsport, PA, USA"
+    />
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Experience</div>
+  </div>
+
+  <div class="time-line-container mb-10">
+    <TimeLineElement
+      title="Postdoctoral Researcher in Digital Visual Healthcare in Human Centric AI at ZEISS Vision Science Lab"
+      subtitle="From May 2023 till May 2026 at Carl Zeiss Vision International GmbH, Aalen, Germany"
+    >
+      Contributed to cross-European digital health innovation as researcher for MAIA (Horizon Europe grant 101114853), delivering key research outputs and consortium milestones.
+
+      Engineered immersive VR/AR simulations with a novel gaze-based error prediction paradigm for real-time interaction.
+
+      Provided informal supervision and mentorship to PhD, Master's, and Bachelor's students, guiding research design and technical development.
+
+      Delivered university lectures and invited talks, effectively communicating complex research to academic and industry audiences.
+
+      Full Paper Chair for ACM ETRA 2025 & 2026; Committee Member with Tübingen Women in Machine Learning (TwiML) 2024; PLOS One Editor
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Postdoctoral Researcher at HCI Group, University of Tübingen"
+      subtitle="From Oct 2020 to Mar 2023 at Department of Computer Science, University of Tübingen, Tübingen, Germany"
+    >
+     Cultivated high-profile collaborations with Adobe, University of Vienna, Charité Berlin, and the University Clinic of Tübingen (Dental & Ophthalmology).
+
+      Consulted for Adobe and Charité Berlin on advanced eye-tracking data analysis, directly contributing to multiple peer-reviewed publications.
+
+      Co-organized the ACM Eye Tracking Research & Applications (ETRA) conference, taking on expanded management responsibilities for the 2023 event hosted at the University of Tübingen.
+
+      Supervised and mentored Bachelor's, Master's, and Doctoral students, guiding research design and execution.
+
+      Led eye-tracking data collection in real-world settings, managing participant engagement, calibration, and technical troubleshooting seamlessly during live museum studies.
+    </TimeLineElement>
+    <TimeLineElement
+      title="Graduate Researcher at HCI Group, University of Tübingen"
+      subtitle="From Jun 2017 to Oct 2020 at Department of Computer Science, University of Tübingen, Tübingen, Germany"
+    >
+      Researched scanpath classification models and gaze-based expertise recognition in the context of dental experts visually inspecting panoramic radiographs (OPTs).
+
+      Developed a novel expertise-classification algorithm, leveraging fixation-based image patches as input to a VGG-16 network.
+
+      Collaborated across disciplines to optimize every stage of the eye-tracking pipeline—from experimental design to evaluation—for robust research outcomes.
+
+      Authored 13 peer-reviewed publications on gaze-based expertise recognition in medical image inspection and foundational methods in eye-tracking data analysis.
+    </TimeLineElement>
+
+    <TimeLineElement
+      title="Research Assistant at Center for Integrative Neuroscience"
+      subtitle="From 2015 to 2017 at University Clinic, Tübingen, Germany"
+    >
+      - Applied image processing and region segmentation algorithms for automated detection of activated cells in microscope images
+      - Constructed a camera system for eye movement recordings with an online pupil detection software for use in eye movement recognition in mice
+      - Handled and trained mice for neuroscience research on motor circuitry and optogenetics
+
+    </TimeLineElement>
+  </div>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Certifications</div>
+  </div>
+
+  <ul class="list-disc mx-6 mb-10 grid gap-2">
+    <li>
+      <a href="#" target="_blank"> TestDAF (German Language Competency), 2015</a>
+    </li>
+    <!-- <li>
+      <a href="#" target="_blank"> Certification Name (with link)</a>
+    </li> -->
+  </ul>
+
+  <div class="mb-5">
+    <div class="text-3xl w-full font-bold">Skills</div>
+  </div>
+
+  <ul class="list-disc md:columns-5 columns-2 mx-6">
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+    <li>Skill Name</li>
+  </ul>
+</BaseLayout>

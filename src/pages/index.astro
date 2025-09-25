@@ -1,0 +1,85 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+import { getCollection } from "astro:content";
+import createSlug from "../lib/createSlug"
+
+const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const last_posts = posts.slice(0, 3);
+---
+
+<BaseLayout sideBarActiveItemID="home">
+  <div class="pb-12 mt-5">
+    <div class="text-xl py-1">Dr.</div>
+    <div class="text-5xl font-bold">Nora Castner</div>
+    <div class="text-3xl py-3 font-bold">Post doctoral researcher, currently at ZEISS</div>
+    <div class="py-2">
+      <text class="text-lg">
+        I am a postdoctoral researcher at the ZEISS Vision Science Lab, specializing in digital visual healthcare and human-centric AI. 
+        With a strong background in eye tracking and scanpath modeling, I collaborate with interdisciplinary teams to advance medical AI 
+        applications and enhance user experience through innovative research.
+      </text>
+    </div>
+    <div class="mt-8">
+      <a  class="btn" href="https://scholar.google.com/citations?user=eQ0_I_MAAAAJ&hl=en&oi=ao" target="_blank" class="btn btn-outline ml-5">
+        Google Scholar
+      </a>
+      <a class="btn" href="https://www.linkedin.com/in/nora-castner-ph-d/" target="_blank" class="btn btn-outline ml-5"> LinkedIn</a>
+      <a  class="btn" href="https://www.eye-tuebingen.de/labs/main-labs/zeiss-vision-science-lab" target="_blank" class="btn btn-outline ml-5">
+        ZEISS Vision Science Lab
+      </a>
+      <a class="btn" href="https://www.hci.uni-tuebingen.de/chair/team/nora-castner" target="_blank" class="btn btn-outline ml-5"> 
+        HCI Group Uni Tue </a>
+      
+    </div>
+  </div>
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-2">Current Projects </div>
+  </div>
+
+  <HorizontalCard
+    title="MAIA transitioning to GLIDE"
+    img="/maia.png"
+    desc= "My research at the ZVSL was part of MAIA, focusing on bidirectional communication with an AI system allowing adaptive sensorimotor control for assistive robotic devices. This project has recently transitioned to GLIDE. More details on GLIDE will be available soon."
+    url="https://site.unibo.it/maia-fetproact/en"
+    badge="ERC Funded"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="ETRA"
+    img="/LOGO-ETRA26.png"
+    desc="Currently one of the full paper chairs for ETRA 2026. I have been actively involved in various roles at ETRA since 2022, with significant contributions when it was held in Tübingen, Germany in 2023."
+    url="https://etra.acm.org/2026/"
+    badge="Conference"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Interaction in AR"
+    img="/dummyobject.jpg"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="#"
+    badge="NEW"
+  />
+
+  <!-- <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Latest from blog</div>
+  </div>
+
+  {
+    last_posts.map((post) => (
+      <>
+        <HorizontalCard
+          title={post.data.title}
+          img={post.data.heroImage}
+          desc={post.data.description}
+          url={"/blog/" + createSlug(post.data.title, post.slug)}
+          target="_self"
+          badge={post.data.badge}
+        />
+        <div class="divider my-0" />
+      </>
+    ))
+  } -->
+</BaseLayout>
