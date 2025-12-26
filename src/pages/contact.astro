@@ -1,0 +1,53 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contact" sideBarActiveItemID="contact">
+    <div class="max-w-xl mx-auto px-4 py-10">
+        <h1 class="text-3xl font-bold mb-6">Contact</h1>
+
+        <!-- Work address -->
+        <p class="mb-4">
+            <strong>Office Address:</strong><br>
+            AI Center<br>
+            Maria von Linden Str. 6 <br>
+            Tübingen, Germany
+        </p>
+
+        <p class="mb-4">
+            <strong>Work Address:</strong><br>
+            Carl Zeiss Vision International GmbH<br>
+            Aalen, Germany
+        </p>
+
+        <p class="mb-4">
+            You can reach me via email at:
+        </p>
+
+        <!-- Email will be rendered here via JavaScript -->
+        <p id="email" class="font-mono text-lg mb-6"></p>
+
+        <!-- Fallback for users without JS -->
+        <noscript>
+            nora.castner(at)zeiss.com
+        </noscript>
+
+        <p>
+            Alternatively, you can contact me through professional networks or use the institutional contact form.
+        </p>
+
+        <script>
+            // Obfuscate email to avoid web scrapers
+            const user = "nora.castner";
+            const domain = "zeiss.com";
+            const email = `${user}@${domain}`;
+            const emailDisplay = `${user}(at)${domain}`;
+
+            const emailElem = document.getElementById("email");
+            // Render clickable mailto link
+            emailElem.innerHTML = `<a href="mailto:${email}" class="text-blue-600 hover:underline">${emailDisplay}</a>`;
+        </script>
+    </div>
+</BaseLayout>
+
+---
