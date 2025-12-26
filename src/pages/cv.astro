@@ -9,10 +9,17 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </div>
 
   <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    <ul class="list-none space-y-2">
+      <li>
+        <strong>PhD in Computer Science</strong> With experience leading research in human-centric AI, eye tracking, and digital health, including Horizon Europe–funded work.
+      </li>
+      <li>
+        <strong>Research output:</strong> Over 30 peer-reviewed publications and sustained collaboration with academic, clinical, and industry partners.
+      </li>
+      <li>
+        <strong>Teaching & service:</strong> Including formal supervision of Bachelor's, Master's, and PhD students, university lecturing, and academic service through conference and journal roles.
+      </li>
+    </ul>
   </div>
 
   <div class="mb-5">
@@ -85,9 +92,11 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       title="Research Assistant at Center for Integrative Neuroscience"
       subtitle="From 2015 to 2017 at University Clinic, Tübingen, Germany"
     >
-      - Applied image processing and region segmentation algorithms for automated detection of activated cells in microscope images
-      - Constructed a camera system for eye movement recordings with an online pupil detection software for use in eye movement recognition in mice
-      - Handled and trained mice for neuroscience research on motor circuitry and optogenetics
+      Applied image processing and region segmentation algorithms for automated detection of activated cells in microscope images.
+
+      Constructed a camera system for eye movement recordings with an online pupil detection software for use in eye movement recognition in mice.
+
+      Handled and trained mice for neuroscience research on motor circuitry and optogenetics
 
     </TimeLineElement>
   </div>
@@ -98,7 +107,10 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 
   <ul class="list-disc mx-6 mb-10 grid gap-2">
     <li>
-      <a href="#" target="_blank"> TestDAF (German Language Competency), 2015</a>
+      <a href="#" target="_blank"> TestDAF (German Language Competency, B2), 2015</a>
+    </li>
+    <li>
+      <a href="#" target="_blank"> Psi Chi (International Honor Society in Psychology), 2011</a>
     </li>
     <!-- <li>
       <a href="#" target="_blank"> Certification Name (with link)</a>
@@ -106,24 +118,35 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
   </ul>
 
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
+    <div class="text-3xl w-full font-bold">Research Profile</div>
   </div>
 
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
+  <div class="grid md:grid-cols-2 gap-8 mb-10">
+    <!-- Research Areas -->
+    <div>
+      <div class="text-xl font-semibold mb-3">Research Areas</div>
+      <ul class="list-disc ml-6 space-y-1">
+        <li>Human-Centric Artificial Intelligence</li>
+        <li>Eye Tracking & Visual Behavior Analysis</li>
+        <li>Gaze-Based Machine Learning</li>
+        <li>Digital Health and Medical Image Analysis</li>
+        <li>Virtual Reality for HCI & Accessibility</li>
+        <li> Visual Comfort in Augmented Reality</li>
+      </ul>
+    </div>
+
+    <!-- Methods -->
+    <div>
+      <div class="text-xl font-semibold mb-3">Methods</div>
+      <ul class="list-disc ml-6 space-y-1">
+        <li>Eye-tracking experiment design and evaluation</li>
+        <li>Machine learning for gaze and scanpath analysis</li>
+        <li>Human-subject studies (lab and in-the-wild)</li>
+        <li>VR/AR prototyping for interactive systems</li>
+        <li>Statistical modeling of behavioral data</li>
+        <li class="whitespace-nowrap">Image processing & computer vision for pupil detection</li>
+      </ul>
+    </div>
+  </div>
+
 </BaseLayout>

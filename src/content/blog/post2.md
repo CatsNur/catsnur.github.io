@@ -1,16 +1,24 @@
 ---
-title: "Demo Post 2"
-description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-pubDate: "Sep 11 2022"
-heroImage: "/scanpath_wp.webp"
+title: "Recognition of errors in gaze-based interaction with anomaly detection"
+description: "This gaze-based anomaly detection method can detect rare but critical selection errors in under 300ms after a selection is made. It achieves over 90% accuracy on correct selections while detecting around 75% of incorrect selections in a VR visual search task."
+pubDate: "May 25 2025"
+heroImage: "/anomaly_detection.png"
+tags: ["Eye Tracking","Gaze-Based Interaction", "Accessibility","Deep Learning/Machine Learning", "Scanpath Analysis"]
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo viverra. Adipiscing enim eu turpis egestas pretium. Euismod elementum nisi quis eleifend quam adipiscing. In hac habitasse platea dictumst vestibulum. Sagittis purus sit amet volutpat. Netus et malesuada fames ac turpis egestas. Eget magna fermentum iaculis eu non diam phasellus vestibulum lorem. Varius sit amet mattis vulputate enim. Habitasse platea dictumst quisque sagittis. Integer quis auctor elit sed vulputate mi. Dictumst quisque sagittis purus sit amet.
+Gaze-based interaction provides an intuitive way to control robotic systems, but unintended selections remains a challenge. Conventional approaches mitigate this problem by requiring additional confirmation actions, yet incorrect decisions still occur. In this study, we propose an anomaly detection approach to improve selection accuracy. We conducted a virtual reality experiment with a visual search task and tested different methods to find anomalies in the gaze pattern. These methods are trained with correct selections to learn their features. By exploiting the gaze patterns, the methods effectively discriminate between correct and incorrect selections, since unintended inputs are not well represented in the learned gaze patterns and therefore the features differ from the normal case. The results show that our approach maintains over 90% accuracy for correct selections while successfully identifying over 60% incorrect selections, thereby reducing false activations. To further validate our method, future work should investigate its effectiveness in real-time scenarios.
 
-Morbi tristique senectus et netus. Id semper risus in hendrerit gravida rutrum quisque non tellus. Habitasse platea dictumst quisque sagittis purus sit amet. Tellus molestie nunc non blandit massa. Cursus vitae congue mauris rhoncus. Accumsan tortor posuere ac ut. Fringilla urna porttitor rhoncus dolor. Elit ullamcorper dignissim cras tincidunt lobortis. In cursus turpis massa tincidunt dui ut ornare lectus. Integer feugiat scelerisque varius morbi enim nunc. Bibendum neque egestas congue quisque egestas diam. Cras ornare arcu dui vivamus arcu felis bibendum. Dignissim suspendisse in est ante in nibh mauris. Sed tempus urna et pharetra pharetra massa massa ultricies mi.
+### Publication
 
-Mollis nunc sed id semper risus in. Convallis a cras semper auctor neque. Diam sit amet nisl suscipit. Lacus viverra vitae congue eu consequat ac felis donec. Egestas integer eget aliquet nibh praesent tristique magna sit amet. Eget magna fermentum iaculis eu non diam. In vitae turpis massa sed elementum. Tristique et egestas quis ipsum suspendisse ultrices. Eget lorem dolor sed viverra ipsum. Vel turpis nunc eget lorem dolor sed viverra. Posuere ac ut consequat semper viverra nam. Laoreet suspendisse interdum consectetur libero id faucibus. Diam phasellus vestibulum lorem sed risus ultricies tristique. Rhoncus dolor purus non enim praesent elementum facilisis. Ultrices tincidunt arcu non sodales neque. Tempus egestas sed sed risus pretium quam vulputate. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus ornare. Fringilla urna porttitor rhoncus dolor purus non. Amet dictum sit amet justo donec enim.
+[View OpenAccess publication](https://dl.acm.org/doi/full/10.1145/3715669.3725895)
 
-Mattis ullamcorper velit sed ullamcorper morbi tincidunt. Tortor posuere ac ut consequat semper viverra. Tellus mauris a diam maecenas sed enim ut sem viverra. Venenatis urna cursus eget nunc scelerisque viverra mauris in. Arcu ac tortor dignissim convallis aenean et tortor at. Curabitur gravida arcu ac tortor dignissim convallis aenean et tortor. Egestas tellus rutrum tellus pellentesque eu. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Id donec ultrices tincidunt arcu. Id cursus metus aliquam eleifend mi.
+### BibTeX
 
-Tempus quam pellentesque nec nam aliquam sem. Risus at ultrices mi tempus imperdiet. Id porta nibh venenatis cras sed felis eget velit. Ipsum a arcu cursus vitae. Facilisis magna etiam tempor orci eu lobortis elementum. Tincidunt dui ut ornare lectus sit. Quisque non tellus orci ac. Blandit libero volutpat sed cras. Nec tincidunt praesent semper feugiat nibh sed pulvinar proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
+```bibtex
+@inproceedings{severitt2025recognition,
+  title={Recognition of errors in gaze-based interaction with anomaly detection},
+  author={Severitt, Bj{\"o}rn Rene and Sauer, Yannick and Castner, Nora Jane and Fuhl, Wolfgang and Wahl, Siegfried},
+  booktitle={Proceedings of the 2025 Symposium on Eye Tracking Research and Applications},
+  pages={1--6},
+  year={2025}
+}
