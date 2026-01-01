@@ -5,40 +5,40 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 <BaseLayout title = "Projects" sideBarActiveItemID="projects">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Virtual and Augmented Reality</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 1"
-    img="/scanpath_wp.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Visual Comfort when interacting in AR"
+    img="/rayneo.png"
+    desc="Augmented-reality (AR) systems often present virtual content at fixed focal distances, creating vergence–accommodation conflicts that can lead to visual fatigue, discomfort, and degraded performance. We are systematically evaluating how the distance of virtual content influence visual comfort and task performance, providing empirical guidance for more user-friendly AR design."
     url="#"
     badge="NEW"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/scanpath_wp.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Realtime error recognition in gaze-based selection"
+    img="/errordetect.png"
+    desc="Even with optimized interfaces, misinterpretation of gaze remains a source of error, particularly when users unintentionally trigger commands or when gaze lingers without deliberate intent. To address this, we developed a novel anomaly detection framework for error recognition (Severitt et al., 2025, ETRA). By leveraging machine learning to model expected gaze patterns, our system can identify and correct outlier interactions in real time—reducing false activations and enhancing reliability without additional user burden. Collectively, this research forms a coherent strategy to tackle the core problem of intent recognition in gaze-based interaction for reaching and grasping. By viewing gaze not just as a pointing mechanism, but as a behavioral signal embedded in context and preference, we move toward systems that can anticipate intent, adapt dynamically, and recover gracefully from errors."
     url="#"
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Expert Gaze in Medicine</div>
   </div>
 
   <HorizontalCard
-    title="Demo Project 3"
+    title="Ophthalmologist gaze for design implications for AI diagnostic support systems"
     img="/scanpath_wp.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    desc="Current grant proposal that investigates how ophthalmologists interact with AI decision-support systems for OCT analysis, focusing on usability rather than model accuracy alone. Using eye-tracking as an objective measure, it examines how AI support influences experts' visual search strategies, cognitive load, and workflow efficiency—particularly in 3D volumetric image interpretation. The research identifies how poorly designed interfaces can disrupt expert scanpaths, reduce trust, and hinder adoption despite strong diagnostic performance. Based on these insights, the project develops and evaluates a method for AI-supported differential diagnoses guided by expert gaze heuristics to improve efficiency, usability, and clinical integration."
     url="#"
-    badge="FOSS"
+    badge="Looking for Ophthalmologist Collaborators"
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 4"
-    img="/scanpath_wp.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    title="Interdisciplinary outlook on gaze and cognitive indicators of how experts interact with AI diagnostic support systems"
+    img="/DentalET.png"
+    desc="AI diagnostic support systems are increasingly embedded in clinical workflows, yet their effectiveness depends as much on human psychology as on model performance. This project emphasizes the cognitive and behavioral mechanisms underlying expert–AI collaboration by using eye-tracking and psychologically grounded behavior analysis to uncover why and how clinicians interact with AI systems. By identifying recurring interaction patterns across multiple medical specialties and levels of expertise, we aim to reveal shared and domain-specific principles of efficient, low-fatigue collaboration. These insights will enable the development of standardized, human-centered usability metrics and design guidelines that foster trust, motivation, and fluent AI adoption in real clinical practice."
     url="#"
   />
   <div class="divider my-0"></div>
@@ -47,5 +47,15 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     img="/scanpath_wp.webp"
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
+  />
+
+  <div>
+    <div class="text-3xl w-full font-bold mb-5 mt-10">Scanpath Analysis and Classification</div>
+  </div>
+  <HorizontalCard
+      title="Demo Project 6"
+      img="/scanpath_wp.webp"
+      desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      url="#"
   />
 </BaseLayout>
